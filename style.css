@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: 'segoe ui';
+}
+
+.grid-nav {
+  display:  grid; 
+  grid-template-columns:  70vw 12vw 12vw;
+  grid-column-gap:  3vw;
+  justify-items: center;
+  background-color:   #1BFFF2;
+}
+
+.navlink {
+  margin-top:   2vh;
+}
+
+.left {
+  justify-self: left;
+  margin-left:  5vw;
+}
+
+h1 {
+  font-weight: 400;
+  text-align: center;
+}
+
+.flex {
+  display:  grid;
+  margin-top:   9vw;
+  grid-template-columns:  50vw 50vw;
+  justify-items:  center;
+  grid-row-gap:   22vh;
+}
+
+.bar {
+  width:  23vw;
+  height: 10vh;
+  border-radius:  10%;
+}
+
+.blue {
+  background-color:   blue;
+}
+
+.red {
+  background-color:   red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.bar:hover {
+  animation-name: rotate;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function:  linear;
+}
+
+.rainbow {
+  background-color:   black;
+}
+
+.rainbow:hover {
+  animation: rainbow;
+  animation-duration: 2s;
+  animation-iteration-count:  infinite;
+  animation-timing-function:  linear; 
+}
+
+.big-bar {
+  width:  32vw;
+  height:   15vh;
+  margin:   auto;
+  border-radius:  15%;
+  margin-top:   15vw;
+  animation: rainbow;
+  animation-duration: 2s;
+  animation-iteration-count:  infinite;
+  animation-timing-function:  linear; 
+}
+
+#about {
+  font-size:  1.1rem;
+  text-align:   center;
+  margin-left:  3vw;
+  margin-right:   3vw;
+}
+
+@keyframes rotate {
+  from {
+    transform:  rotate(0deg);
+  }
+  to {
+    transform:  rotate(360deg);
+  }
+}
+
+@keyframes rainbow {
+  0% {
+    background-color: red;
+    transform:  rotate( 0deg);
+  }
+  20% {
+    background-color: #c600ff;
+    transform:  rotate( 72deg);
+  }
+  40% {
+    background-color: #0054ff;
+    transform:  rotate(144deg);
+  }
+  60% {
+    background-color: #18cc05;
+    transform:  rotate(216deg);
+  }
+  80% {
+    background-color: #ffe600;
+    transform:  rotate(288deg);
+  }
+  100% {
+    background-color: red;
+    transform:  rotate(360deg);
+  }
+}
