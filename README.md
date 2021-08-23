@@ -1,0 +1,2 @@
+## Purpose of this website
+This website was part of a challenge to create a cool animation with only HTML and CSS. There is no Javascript, not even a little bit. Beautiful things can come from simple code.
